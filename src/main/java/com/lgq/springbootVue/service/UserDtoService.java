@@ -1,7 +1,7 @@
-package com.lgq.springboot.service;
+package com.lgq.springbootVue.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lgq.springboot.dto.UserDto;
+import com.lgq.springbootVue.dto.UserDto;
 
 /**
 * @author LGQ

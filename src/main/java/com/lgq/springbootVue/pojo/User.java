@@ -1,4 +1,4 @@
-package com.lgq.springboot.pojo;
+package com.lgq.springbootVue.pojo;
 
 import com.baomidou.mybatisplus.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.lgq.springboot.common;
+package com.lgq.springbootVue.common;
 
 import ch.qos.logback.core.joran.spi.NoAutoStart;
 import lombok.AllArgsConstructor;

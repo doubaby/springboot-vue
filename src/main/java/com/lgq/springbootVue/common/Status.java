@@ -1,4 +1,4 @@
-package com.lgq.springboot.common;
+package com.lgq.springbootVue.common;
 
 /**
  * @author LGQ

@@ -1,4 +1,4 @@
-package com.lgq.springboot.dto;
+package com.lgq.springbootVue.dto;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

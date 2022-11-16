@@ -1,20 +1,15 @@
-package com.lgq.springboot.service.impl;
+package com.lgq.springbootVue.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.log.Log;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lgq.springboot.common.Status;
-import com.lgq.springboot.dto.UserDto;
-import com.lgq.springboot.exception.ServiceException;
-import com.lgq.springboot.mapper.UserDtoMapper;
-import com.lgq.springboot.service.UserDtoService;
-import com.lgq.springboot.utils.TokenUtils;
-import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.lgq.springbootVue.common.Status;
+import com.lgq.springbootVue.dto.UserDto;
+import com.lgq.springbootVue.exception.ServiceException;
+import com.lgq.springbootVue.mapper.UserDtoMapper;
+import com.lgq.springbootVue.service.UserDtoService;
 import org.springframework.stereotype.Service;
-
-import javax.servlet.ServletException;
 
 /**
  * @author LGQ
@@ -35,9 +30,6 @@ public class UserDtoServiceImpl extends ServiceImpl<UserDtoMapper, UserDto> impl
         //判断是否不存在
         if (one != null) {
             BeanUtil.copyProperties(one, userDto, true);
-            //设置token
-            String token = TokenUtils.generateTokenString(one.getId().toString(), one.getPassword());
-            userDto.setToken(token);
             return userDto;
         } else {
             throw new ServiceException(Status.CODE_600, "用户名或密码错误");

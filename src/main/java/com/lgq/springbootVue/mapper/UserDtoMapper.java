@@ -1,12 +1,8 @@
-package com.lgq.springboot.mapper;
+package com.lgq.springbootVue.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lgq.springboot.dto.UserDto;
-import com.lgq.springboot.pojo.User;
-import org.apache.ibatis.annotations.Param;
+import com.lgq.springbootVue.dto.UserDto;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 /**
  * @author LGQ

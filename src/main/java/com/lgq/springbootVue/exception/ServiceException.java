@@ -1,4 +1,4 @@
-package com.lgq.springboot.exception;
+package com.lgq.springbootVue.exception;
 
 import lombok.Getter;
 

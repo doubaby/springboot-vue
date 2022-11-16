@@ -1,10 +1,10 @@
-package com.lgq.springboot.service.impl;
+package com.lgq.springbootVue.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
-import com.lgq.springboot.pojo.User;
-import com.lgq.springboot.service.UserService;
-import com.lgq.springboot.mapper.UserMapper;
+import com.lgq.springbootVue.pojo.User;
+import com.lgq.springbootVue.service.UserService;
+import com.lgq.springbootVue.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

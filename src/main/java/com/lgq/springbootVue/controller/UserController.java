@@ -1,16 +1,19 @@
-package com.lgq.springboot.controller;
+package com.lgq.springbootVue.controller;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.poi.excel.ExcelReader;
 import cn.hutool.poi.excel.ExcelUtil;
 import cn.hutool.poi.excel.ExcelWriter;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.lgq.springboot.common.Result;
-import com.lgq.springboot.common.Status;
-import com.lgq.springboot.dto.UserDto;
-import com.lgq.springboot.pojo.User;
-import com.lgq.springboot.service.UserDtoService;
-import com.lgq.springboot.service.UserService;
+
+import com.lgq.springbootVue.common.Result;
+import com.lgq.springbootVue.common.Status;
+import com.lgq.springbootVue.dto.UserDto;
+import com.lgq.springbootVue.pojo.User;
+import com.lgq.springbootVue.service.UserDtoService;
+import com.lgq.springbootVue.service.UserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +36,9 @@ import java.util.Map;
 @SuppressWarnings("all")
 @RequestMapping("/user")
 @RestController
-@MapperScan("com.lgq.springboot.mapper")
+@MapperScan("com.lgq.springbootVue.mapper")
+@CrossOrigin
+@Api(tags = "登陆接口")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -43,6 +48,7 @@ public class UserController {
 
 
     @GetMapping("/page")
+    @ApiOperation("分页显示")
     public Result pageSelect(@RequestParam(defaultValue = "1") Integer pageNum,
                              @RequestParam(defaultValue = "5") Integer pageSize,
                              @RequestParam(value = "username", defaultValue = "") String username,

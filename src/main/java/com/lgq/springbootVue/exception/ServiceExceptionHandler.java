@@ -1,12 +1,9 @@
-package com.lgq.springboot.exception;
+package com.lgq.springbootVue.exception;
 
-import com.lgq.springboot.common.Result;
-import com.lgq.springboot.common.Status;
+import com.lgq.springbootVue.common.Result;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.xml.ws.Response;
 
 /**
  * @author LGQ

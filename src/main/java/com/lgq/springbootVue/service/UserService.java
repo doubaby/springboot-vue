@@ -1,6 +1,6 @@
-package com.lgq.springboot.service;
+package com.lgq.springbootVue.service;
 
-import com.lgq.springboot.pojo.User;
+import com.lgq.springbootVue.pojo.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

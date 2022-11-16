@@ -90,8 +90,6 @@
         <el-form-item label="邮箱">
           <el-input v-model="form.email" autocomplete="off"></el-input>
         </el-form-item>
-
-
       </el-form>
 
       <div slot="footer" class="dialog-footer">
